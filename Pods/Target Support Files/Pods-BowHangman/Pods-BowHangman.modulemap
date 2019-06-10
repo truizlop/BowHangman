@@ -1,0 +1,6 @@
+framework module Pods_BowHangman {
+  umbrella header "Pods-BowHangman-umbrella.h"
+
+  export *
+  module * { export * }
+}

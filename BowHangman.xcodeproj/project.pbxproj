@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1154748F219C25310063A995 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154748E219C25310063A995 /* main.swift */; };
-		11547497219C25FD0063A995 /* Bow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11547496219C25FD0063A995 /* Bow.framework */; };
+		7783B2EA34019FDE0CDCBF30 /* Pods_BowHangman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E42A49EE5B8F71B6CAA817 /* Pods_BowHangman.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1154748B219C25310063A995 /* BowHangman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BowHangman; sourceTree = BUILT_PRODUCTS_DIR; };
 		1154748E219C25310063A995 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		11547496219C25FD0063A995 /* Bow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bow.framework; path = Carthage/Build/Mac/Bow.framework; sourceTree = "<group>"; };
+		117DC0AA22AE438D00EF65F0 /* Bow.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Bow.framework.dSYM; path = Carthage/Build/iOS/Bow.framework.dSYM; sourceTree = "<group>"; };
+		117DC0AB22AE438D00EF65F0 /* BowEffects.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = BowEffects.framework.dSYM; path = Carthage/Build/iOS/BowEffects.framework.dSYM; sourceTree = "<group>"; };
+		117DC0AE22AE43A200EF65F0 /* Bow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bow.framework; path = Carthage/Build/iOS/Bow.framework; sourceTree = "<group>"; };
+		117DC0AF22AE43A200EF65F0 /* BowEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BowEffects.framework; path = Carthage/Build/iOS/BowEffects.framework; sourceTree = "<group>"; };
+		181FE5E32CE6012B7B121C2B /* Pods-BowHangman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowHangman.debug.xcconfig"; path = "Target Support Files/Pods-BowHangman/Pods-BowHangman.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E42A49EE5B8F71B6CAA817 /* Pods_BowHangman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowHangman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0DA56DA0E05AB6BD865C8D /* Pods-BowHangman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowHangman.release.xcconfig"; path = "Target Support Files/Pods-BowHangman/Pods-BowHangman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11547497219C25FD0063A995 /* Bow.framework in Frameworks */,
+				7783B2EA34019FDE0CDCBF30 /* Pods_BowHangman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +42,7 @@
 				1154748D219C25310063A995 /* BowHangman */,
 				1154748C219C25310063A995 /* Products */,
 				11547495219C25FC0063A995 /* Frameworks */,
+				5FCA02455ED81A63E8F8F517 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +65,23 @@
 		11547495219C25FC0063A995 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				117DC0AE22AE43A200EF65F0 /* Bow.framework */,
+				117DC0AF22AE43A200EF65F0 /* BowEffects.framework */,
+				117DC0AA22AE438D00EF65F0 /* Bow.framework.dSYM */,
+				117DC0AB22AE438D00EF65F0 /* BowEffects.framework.dSYM */,
 				11547496219C25FD0063A995 /* Bow.framework */,
+				D5E42A49EE5B8F71B6CAA817 /* Pods_BowHangman.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FCA02455ED81A63E8F8F517 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				181FE5E32CE6012B7B121C2B /* Pods-BowHangman.debug.xcconfig */,
+				FA0DA56DA0E05AB6BD865C8D /* Pods-BowHangman.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,9 +91,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11547492219C25310063A995 /* Build configuration list for PBXNativeTarget "BowHangman" */;
 			buildPhases = (
+				D8B583ADE9AFF419EBBF6B56 /* [CP] Check Pods Manifest.lock */,
 				11547487219C25310063A995 /* Sources */,
 				11547488219C25310063A995 /* Frameworks */,
-				11547499219C270D0063A995 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -94,6 +116,7 @@
 				TargetAttributes = {
 					1154748A219C25310063A995 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -103,6 +126,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 11547482219C25310063A995;
 			productRefGroup = 1154748C219C25310063A995 /* Products */;
@@ -115,24 +139,27 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11547499219C270D0063A995 /* Run Script */ = {
+		D8B583ADE9AFF419EBBF6B56 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Bow.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Run Script";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BowHangman-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -265,27 +292,31 @@
 		};
 		11547493219C25310063A995 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181FE5E32CE6012B7B121C2B /* Pods-BowHangman.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		11547494219C25310063A995 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0DA56DA0E05AB6BD865C8D /* Pods-BowHangman.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
